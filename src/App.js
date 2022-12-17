@@ -2,7 +2,7 @@ import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';
 import Shop from './routes/shop/shop.component';
 import { Routes, Route } from 'react-router-dom';
-import SignIn from './routes/signin/signin.component';
+import SignIn from './routes/signin/sign-in.component';
 
 function App() {
   return (
