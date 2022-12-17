@@ -8,12 +8,12 @@ import {
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: 'AIzaSyAk9tKungQBdy4PFKS2RLR63-AEwT1FzzA',
+  authDomain: 'pogo-clothing-db.firebaseapp.com',
+  projectId: 'pogo-clothing-db',
+  storageBucket: 'pogo-clothing-db.appspot.com',
+  messagingSenderId: '458936755795',
+  appId: '1:458936755795:web:907358935cb6bea88c88a6',
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -31,7 +31,6 @@ export const db = getFirestore();
 
 export const createUserDocumentFromAuth = async (userAuth) => {
   const userDocRef = doc(db, 'users', userAuth.uid);
-
   const userSnapshot = await getDoc(userDocRef);
 
   if (!userSnapshot.exists()) {
